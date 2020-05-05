@@ -28,10 +28,15 @@ public class upi extends AppCompatActivity {
         initializeViews();
         Bundle bundle = getIntent().getExtras();
         String stuffs = bundle.getString("stuffs");
-        Toast.makeText(getApplicationContext(), "stuff"+stuffs, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Enter your address in the message box", Toast.LENGTH_SHORT).show();
+
+        Bundle bundle2 = getIntent().getExtras();
+        String message = bundle.getString("message");
+        noteEt.setText(message);
+
         amountEt.setText(stuffs);
         amountEt.setFocusable(false);
-        noteEt.setFocusable(false);
+       // noteEt.setFocusable(false);
         nameEt.setFocusable(false);
         upiIdEt.setFocusable(false);
 

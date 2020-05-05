@@ -49,9 +49,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:id="@+id/note"
-        android:focusable="false"
         android:layout_below="@+id/name"
-        android:text="Total coffee fee charged"/>
+        android:text=""/>
 
     <Button
         android:layout_width="100dp"

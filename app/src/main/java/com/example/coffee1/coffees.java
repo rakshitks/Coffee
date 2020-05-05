@@ -82,7 +82,12 @@ public class coffees extends AppCompatActivity {
 
         Bundle bundle = new Bundle();
         bundle.putString("stuffs", Integer.toString(price));
+
+        Bundle bundle2 = new Bundle();
+        bundle.putString("message", priceMessage);
+        myIntent.putExtras(bundle2);
         myIntent.putExtras(bundle);
+
         startActivity(myIntent);
 
     }
